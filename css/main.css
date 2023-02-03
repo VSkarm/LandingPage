@@ -74,7 +74,7 @@ header {
     align-items: center;
 }
 .navbar__logo img{
-    width: 63px;
+    width: 80px;
 }
 
 .navbar__logo p{
@@ -90,7 +90,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 60%;
+    width: 40%;
     height: 100%;
     transform: translateX(-100%);/*fernei to menu terma aristera*/
     background-color:var(--coffee);
@@ -144,9 +144,10 @@ header {
 .navbar__icon { 
     width: 45px;
     height: 6px;
-    background-color: var(--blue) ;
+    background: var(--blue) ;
     border-radius: 5px;
     transition: var(--smooth);
+    position: relative;
 }
 
 .navbar__icon:before,
@@ -155,15 +156,15 @@ header {
     position:absolute;
     width: 45px;
     height: 6px;
-    background-color: var(--blue) ;
+    background: var(--blue) ;
     border-radius: 5px;
-    transition: var(--smooth);
+    transition: var(--smooth);      
 }
 
 .navbar__icon:before {
     transform: translateY(-12px);
   }
-  
+
   .navbar__icon:after {
     transform: translateY(12px);
   }
@@ -173,10 +174,39 @@ header {
     background: transparent;
   }
   
-  .open .navbar__icon:before {
+.open .navbar__icon:before {
     transform: rotate(45deg) translate(35px, -35px);
   }
-  
+
   .open .navbar__icon:after {
     transform: rotate(-45deg) translate(35px, 35px);
   }
+
+@media (min-width: 62em){
+    .navbar__links{
+        position:initial;
+        transform: translateX(0);
+        opacity: 1;
+        background-color: var(--white);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .navbar__link{
+        margin: 0 25px;
+    }
+    .navbar__link a{
+        color: var(--blue);
+    }
+    .navbar__link a:hover{
+        color: var(--gray);
+    }
+    .navbar__btn{
+        margin-left: 0;
+        border: none;
+    }
+    .navbar__ham {
+        display: none;
+    }
+
+}
