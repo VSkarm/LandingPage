@@ -1,4 +1,4 @@
-/* Global */
+/* Global ================*/
 *,
 *:before,
 *:after{
@@ -43,12 +43,40 @@ button:hover{
     transition: var(--smooth);
 }
 
+p{
+    line-height: 40px;
+}
+
+.section__tag{
+    font-size: 1.75rem;
+    font-family: "Roboto", serif;
+    text-transform: capitalize;
+    color: var(--blue);
+}
+
+.section__title{
+    font-size: 3.125rem;
+    font-family: "Roboto",serif;
+    text-transform: capitalize;
+    color: var(--light-blue);
+    margin-bottom: 18px;
+}
+.section__detail{
+    font-size: 1.25rem;
+    font-family: "Montserrat";
+    color: var(--gray);
+    margin: 0 auto;
+}
+
+
+
 :root{
-    --blue: #13005A;
-    --light-blue: #144272;
-    --gray: #2C74B3;
+    --dark-blue:#06283D;
+    --blue: #1363DF;
+    --light-blue: #47B5FF;
+    --gray: #373A40;
     --coffee:#E1D7C6;
-    --white: #EAFDFC;
+    --white: #DFF6FF;
 
     --smooth: all .3s ease-in;
     --shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
@@ -58,7 +86,7 @@ button:hover{
 
 /* Header ================= */
 header {
-    background-color: var(--white);
+    background-color: var(--blue);
 }
 
 .navbar{
@@ -113,7 +141,7 @@ header {
 }
 
 .navbar__link a{
-    font-family: "Montserrat", serif;
+    font-family: "Roboto", serif;
     color: var(--light-blue);
     text-decoration: none;
     text-transform: capitalize;
@@ -144,7 +172,7 @@ header {
 .navbar__icon { 
     width: 45px;
     height: 6px;
-    background: var(--blue) ;
+    background: var(--gray) ;
     border-radius: 5px;
     transition: var(--smooth);
     position: relative;
@@ -156,7 +184,7 @@ header {
     position:absolute;
     width: 45px;
     height: 6px;
-    background: var(--blue) ;
+    background: var(--gray) ;
     border-radius: 5px;
     transition: var(--smooth);      
 }
@@ -187,7 +215,7 @@ header {
         position:initial;
         transform: translateX(0);
         opacity: 1;
-        background-color: var(--white);
+        background-color: var(--blue);
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -196,10 +224,10 @@ header {
         margin: 0 25px;
     }
     .navbar__link a{
-        color: var(--blue);
+        color: var(--white);
     }
     .navbar__link a:hover{
-        color: var(--gray);
+        color: yellow;
     }
     .navbar__btn{
         margin-left: 0;
@@ -207,6 +235,102 @@ header {
     }
     .navbar__ham {
         display: none;
+    }
+
+}
+
+/* Banner ================*/
+#banner .container{
+    background-image: linear-gradient(to bottom, var(--blue), #fff );
+}
+.banner__desc{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 10px
+}
+
+.banner__tag{
+    font-size: 1.375rm;
+    font-weight: bold;
+    font-family: "Roboto", serif;
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+.banner__title{
+    font-size: 2.625 rem;
+    font-weight: bold;
+    font-family:"Montserrat", serif;
+    color: var(--coffee);
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+.banner__detail{
+    font-size: 1.25 rem;
+    font-family: "Montserrat", serif;
+    color: var(--blue);
+    text-transform: capitalize;
+    margin-top: 25px;
+}
+
+.banner__btn{
+    margin-top: 54px;
+}
+
+.banner__btn button {
+    font-size: 1.25rem;
+}
+
+@media (min-width: 62em){
+    #banner .container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .banner__img{
+        order:2;
+        padding-right: 25px;
+   }
+   .banner__desc{
+    order:1;
+    text-align: initial;
+    width: 60%;
+    padding:0 0 0 240px;
+   }
+
+   .banner__detail{
+    max-width: 800px;
+    width: 100%;
+   }
+}
+/* History ================*/
+#history .container{
+    position:relative;
+}
+.history__desc{
+    text-align: center;
+    padding: 0 15px;
+}
+
+.history__btn {
+    margin-top: 56px;
+}
+.history__btn button{
+    font-size: 1.25rem;
+}
+
+@media (min-width: 62rem){
+    #history .container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .history__desc{
+        text-align: initial;
+        padding: 0 240px 0 0;
+        width: 45%;
     }
 
 }
