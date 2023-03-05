@@ -3,20 +3,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto&display=swap" rel="stylesheet">
-    <!-- Main Style -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto&display=swap" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat" rel="stylesheet"> -->
+
+<!-- Main Style -->
 
     <link rel="stylesheet" href="./css/main.css">
 
+
     <title>INIOCHOS</title>
 </head>
-<body>    
+<body>  
  
-
-
+    <!-- overlay -->
+    <section id="overlay"></section>
+    
     <!-- Header -->
     <header class="container">
         <div class="wrapper">
@@ -30,10 +35,9 @@
                 <!-- links -->
                 <ul class="navbar__links">
                     <li class="navbar__link"><a href="#banner">overview</a></li>
-                    <li class="navbar__link"><a href="#information">information</a></li>
-                    <li class="navbar__link"><a href="#telephone">telephone</a></li>
+                    <li class="navbar__link"><a href="#announcements">announcements</a></li>
                     <li class="navbar__link"><a href="#history">history</a></li>
-                    <a href="#contact"><button class="navbar__btn">contact</button></a>
+                    <li class="navbar__link"><a href="#information">information</a></li>
                 </ul>
                 
                 <!-- icon -->
@@ -53,14 +57,54 @@
             <div class="banner__desc">
                 <h4 class="banner__tag">Andravida AFb - Air Tactics Center</h4>
                 <h1 class="banner__title">INIOCHOS 2023</h1>
-                <p class="banner__detail">lorem ipsum...</p>
-                <div class="banner__btn">
+                <p class="banner__detail">Welcome!</p>
+                <h1 class = 'banner__detail' id="datetime" ></h1>
+                <!-- <div class="banner__btn">
                     <a href="#contact"><button>Let us help</button></a>
-                </div>
+                </div> -->
             </div>
         </div>
 
     </section>
+<!-- Announce -->
+    <section id = "announcements">
+        
+        <div class="container">
+            <div class="wrapper">
+                <div class="section__heading">
+                    <h4 class="section__tag">Iniochos 2023</h4>
+                    <h3 class="section__title">Announcements</h3>
+                    <p class="section__detail">In this section you can find important Announcements.</p>
+                 </div>
+                 <div class="ann__cards"> 
+                    <!-- card1 -->
+                    <div class="ann__card">                        
+                        <h2>telephone catalogue</h2>
+                        <p>The person who associated a work with this deed has dedicated the work to the public domain by waiving all of their rights to the work worldwide under copyright law,</p>
+                    </div>
+                    <!-- card2 -->
+                    <div class="ann__card">                        
+                        <h2>e-mail</h2>
+                        <p>The person who associated a work with this deed has dedicated the work to the public domain by waiving all of their rights to the work worldwide under copyright law,</p>
+                    </div> 
+                    <!-- card3 -->
+                    <div class="ann__card">                       
+                        <h2>Exercise Locations</h2>
+                        <p>The person who associated a work with this deed has dedicated the work to the public domain by waiving all of their rights to the work worldwide under copyright law,</p>
+                    </div>
+                 </div>               
+            
+            </div>
+
+        <!-- <div class="announcement-container">
+            <p class="announcement-text">Today's announcements:</p>
+            <ul class="announcement-list">
+            <li class="announcement-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li class="announcement-item">Maecenas varius ligula ac turpis dignissim, sed tempus elit dignissim.</li>
+            <li class="announcement-item">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</li>
+            </ul> -->
+        </div>
+    </section>	  
 
     <!-- History -->
     <section id="history">
@@ -69,19 +113,107 @@
                 <img src="./img/banner_img.png" alt="planes">
             </div>
             <div class="history__desc">
-                <h4 class="section__tag">INIOCHOS EXERCISE</h4>
+                <h4 class="section__tag">Iniochos 2023</h4>
                 <h3 class="section__title">History</h3>
-                <p class="section__detail">lorem ipsum...</p>
-                <div class="history btn">
-                    <a href="#history"><button>Leanr More</button></a>
+                <p class="section__detail">INIOCHOS is an international joint exercise that takes place annually in the 117 Combat Wing of the Hellenic Air Force at the Andravida Air Base. It is organized by the Ait Tactics Center of the Hellenic Airforce. The exercise has a long history, having been first held in 1988, and has since grown to become one of the largest and most complex air exercises in Europe. Over the years, INIOCHOS has involved numerous NATO and non-NATO countries, providing a unique opportunity for allied air forces to train together and exchange knowledge and experiences. The exercise is designed to enhance interoperability, exchange tactics, techniques and procedures, and to test the latest weapons systems and technologies. Through its long and distinguished history, INIOCHOS has played a significant role in strengthening the air defense capabilities of Greece and its allies.
+                </p>
+                <!-- <div class="history btn">
+                    <a href="#history"><button>Learn More</button></a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- information -->
+    <section id="information" class ="pt">
+        <div class="container">
+            <div class="wrapper">
+                 <div class="section__heading">
+                    <h4 class="section__tag">Iniochos 2023</h4>
+                    <h3 class="section__title">Information</h3>
+                    <p class="section__detail">In this section you can find usefull links for the Telephone Catalogue of the Exercise, access your Email account and also find a map of all locations of the exercise.</p>
+                 </div>
+
+                 <!-- <div class="todo__dec-1">
+                    <img src="./img/keat.png" alt="KEAT">
+                </div>
+    
+                <div class="todo__dec-2">
+                    <img src="./img/117pm.png" alt="117PM">
+                </div> -->
+                 <div class="information__cards"> 
+                    <!-- card1 -->                    
+                    
+                    <div class="cont__card">
+                        <a href="test.pdf" target="_blank">
+                        <img src="./img/telephone.png" alt="email">
+                        <h2>Telephone</h2>
+                        <p>Access to Catalogue</p>
+                    </a>
+                    </div> 
+                    
+                    <!-- card2 -->
+                   
+                    <div class="cont__card">
+                        <a href="test.pdf" target="_blank">
+                        <img src="./img/email.png" alt="email">
+                        <h2>e-mail</h2>
+                        <p>Access to E-Mail</p>
+                    </a>
+                    </div> 
+                 
+                    <!-- card3 -->
+                    
+
+                   
+                    <div class="cont__card">
+                        <a href="test.pdf" target="_blank">
+                        <img src="./img/location.png" alt="email">
+                        <h2>Locations</h2>
+                        <p>Exercise Map</p>
+                    </a>
+                    </div> 
+               
+                 </div>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <!-- Footer -->
+    <footer class = "pt">
+        <div class="container">
+            <div class="wrapper">
+                <div class="footer__top">
+                    <!-- logos -->
+                    <div class="navbar__logo">
+                        <img src="./img/ini.png" alt="logo">
+                    </div>
+
+     
+                    <!-- links -->
+                    <ul class="footer__links">                        
+                       <li class="footer__link"><a href="#history">History</a></li> 
+                       <li class="footer__link"><a href="#information">Information</a></li> 
+                       <li class="footer__link"><a href="#announcements">Announcements</a></li> 
+                    </ul>
+                    <!-- social -->
+                    <div class="footer_socials">
+                        <!-- ft -->
+                        <a href="#announcements">
+                        <svg width="64px" height="64px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g fill = 'currentColor'id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="1.472"> <title>plane</title> <path d="M12.25 8.719l-0.469 0.469 4 0.344 2.406-2.406c0.375-0.375 1.063-0.938 2.063-1.563s1.656-0.813 1.906-0.563c0.688 0.688 0 2.031-2.063 4.063l-2.375 2.375 0.344 4 0.469-0.438c0.375-0.406 0.781-0.406 1.094-0.094 0.375 0.375 0.219 0.906-0.531 1.656l-0.75 0.781 0.375 2.688 0.531-0.563c0.344-0.375 0.719-0.375 1.063-0.063 0.375 0.375 0.313 0.844-0.188 1.344l-1.125 1.125c0.438 3 0.5 4.688 0.156 5.031-0.156 0.125-0.375 0.25-0.688 0.313-0.281 0.031-0.531 0-0.688-0.125-0.125-0.156-0.313-0.719-0.5-1.688-0.219-1-0.75-2.688-1.688-5.063-0.906-2.406-1.563-3.75-1.875-4.094-0.125-0.125-0.313-0.125-0.531 0-0.219 0.094-1 0.75-2.25 1.969-1.25 1.25-2.406 2.25-3.5 3.031-0.031 0.188 0.063 0.813 0.219 1.844s0.219 1.719 0.188 1.969c-0.063 0.25-0.313 0.594-0.719 1-0.219 0.219-0.375 0.344-0.531 0.375-0.406-0.406-1.031-1.719-1.875-3.875-2.344-1.031-3.625-1.688-3.875-1.938 0-0.125 0.125-0.313 0.344-0.531 0.406-0.406 0.75-0.656 1.031-0.688 0.25-0.063 0.906 0.031 1.938 0.219 1.031 0.156 1.656 0.219 1.875 0.219 0.75-1.125 2.156-2.781 4.344-4.969 0.625-0.688 0.813-1.125 0.594-1.344-0.313-0.344-1.688-0.969-4.063-1.875-2.406-0.906-4.063-1.5-5.063-1.688-1-0.219-1.563-0.375-1.688-0.531-0.156-0.125-0.188-0.375-0.125-0.688 0.031-0.313 0.156-0.531 0.313-0.688 0.313-0.313 2-0.281 5.031 0.156l1.094-1.125c0.5-0.469 0.969-0.531 1.344-0.156 0.344 0.313 0.313 0.688-0.031 1.031l-0.563 0.531 2.688 0.375 0.75-0.719c0.75-0.75 1.281-0.906 1.656-0.531 0.344 0.344 0.313 0.688-0.063 1.094z"></path> </g><g id="SVGRepo_iconCarrier"> <title>plane</title> <path d="M12.25 8.719l-0.469 0.469 4 0.344 2.406-2.406c0.375-0.375 1.063-0.938 2.063-1.563s1.656-0.813 1.906-0.563c0.688 0.688 0 2.031-2.063 4.063l-2.375 2.375 0.344 4 0.469-0.438c0.375-0.406 0.781-0.406 1.094-0.094 0.375 0.375 0.219 0.906-0.531 1.656l-0.75 0.781 0.375 2.688 0.531-0.563c0.344-0.375 0.719-0.375 1.063-0.063 0.375 0.375 0.313 0.844-0.188 1.344l-1.125 1.125c0.438 3 0.5 4.688 0.156 5.031-0.156 0.125-0.375 0.25-0.688 0.313-0.281 0.031-0.531 0-0.688-0.125-0.125-0.156-0.313-0.719-0.5-1.688-0.219-1-0.75-2.688-1.688-5.063-0.906-2.406-1.563-3.75-1.875-4.094-0.125-0.125-0.313-0.125-0.531 0-0.219 0.094-1 0.75-2.25 1.969-1.25 1.25-2.406 2.25-3.5 3.031-0.031 0.188 0.063 0.813 0.219 1.844s0.219 1.719 0.188 1.969c-0.063 0.25-0.313 0.594-0.719 1-0.219 0.219-0.375 0.344-0.531 0.375-0.406-0.406-1.031-1.719-1.875-3.875-2.344-1.031-3.625-1.688-3.875-1.938 0-0.125 0.125-0.313 0.344-0.531 0.406-0.406 0.75-0.656 1.031-0.688 0.25-0.063 0.906 0.031 1.938 0.219 1.031 0.156 1.656 0.219 1.875 0.219 0.75-1.125 2.156-2.781 4.344-4.969 0.625-0.688 0.813-1.125 0.594-1.344-0.313-0.344-1.688-0.969-4.063-1.875-2.406-0.906-4.063-1.5-5.063-1.688-1-0.219-1.563-0.375-1.688-0.531-0.156-0.125-0.188-0.375-0.125-0.688 0.031-0.313 0.156-0.531 0.313-0.688 0.313-0.313 2-0.281 5.031 0.156l1.094-1.125c0.5-0.469 0.969-0.531 1.344-0.156 0.344 0.313 0.313 0.688-0.031 1.031l-0.563 0.531 2.688 0.375 0.75-0.719c0.75-0.75 1.281-0.906 1.656-0.531 0.344 0.344 0.313 0.688-0.063 1.094z"></path> </g></svg>                         </a>
+                    </div>
+                                   
+                </div>
+                <div class="footer__bottom">
+                    <p>2023 117CW - IT DEPARTMENT - &copy; SKARMINTZOS VASILEIOS</p>
                 </div>
             </div>
         </div>
+    </footer>
 
-
-
-    </section>
     <script type="text/javascript" src="./js/main.js"></script>
-  
+
 </body>
 </html>
