@@ -32,7 +32,7 @@ img{
 }
 
 .wrapper{
-    max-width: 1440px;
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
 }
@@ -414,47 +414,6 @@ header {
 
 }
 
-  
-  
-  
-  
-  
-  /* .announcement-text {
-    font-size: 30px;
-    margin: 0 0 10px;
-    font-weight: bold;
-  }
-  
-  .announcement-list {
-    font-size: 20px;
-    font-family:"Montserrat", serif;
-    margin: 5px;
-  }
-
-  .announcement-item {
-    font-size: 20px;
-    margin: 0;
-  }
-  
-@media (min-width: 62rem) {
-    #announce .announcement-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .announcement {
-        padding:10px;
-        margin: 10px;
-    }
-  
-    .announcement-item {
-      font-size: 20px;
-      margin: 5px;
-
-    }
-  }
-   */
 /* History ================*/
 #history .container{
     position:relative;
@@ -552,6 +511,31 @@ header {
     padding-top: 13px;
 }
 
+.cont__card a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--coffee);
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.2s ease-out;
+}
+
+
+
+.cont__card:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 20px #ccc;
+}
+
+.cont__card:active{
+    background-color: var(--dark-blue);
+    box-shadow: none;
+    transform: none;
+
+}
+
+
+
 @media (min-width: 62rem){
     .information__cards{
         display: flex;
@@ -564,33 +548,36 @@ header {
         position:absolute;
         bottom: -55%;
         left: -15%;
-        width: 100%;
-        height: 100%;
+        width: 50%;
+        height: 90%;
         background-image: url("../img/haf.png");
         background-repeat: no-repeat;
     }
+
+    
+    /* .todo__dec-1{
+        position: absolute;
+        top: 25%;
+        left: 0;
+    }
+    
+    .todo__dec-1 img{
+        width: 138px;
+        display: none;
+    }
+    
+    .todo__dec-2{
+        position: absolute;
+        top: 25%;
+        right: 0;
+    }
+    .todo__dec-2 img{
+        width: 128px;
+        display: none;
+    }  */
 }
 
-/* .todo__dec-1{
-    position: absolute;
-    top: 25%;
-    left: 0;
-}
 
-.todo__dec-1 img{
-    width: 138px;
-    display: none;
-}
-
-.todo__dec-2{
-    position: absolute;
-    top: 25%;
-    right: 0;
-}
-.todo__dec-2 img{
-    width: 128px;
-    display: none;
-} */
 
 @media (min-width: 62rem){
      .todo__dec-1 img{
