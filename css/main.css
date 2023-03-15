@@ -101,7 +101,6 @@ p{
     --gray: #373A40;
     --coffee:#E1D7C6;
     --white: #DFF6FF;
-
     --smooth: all .3s ease-in;
     --shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
 }
@@ -356,6 +355,9 @@ header {
 } */
 
   /* ==============.announcement========= */
+  #announcements{
+    margin: 50px 0;
+  }
   .ann__cards{
     padding-top: 5%;
     position: relative;
@@ -380,7 +382,7 @@ header {
 
     .ann__card h2 {
         padding-top: 20px;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         font-family: "Montserrat", serif;
         color: var(--light-blue);
         text-transform: capitalize;
@@ -389,13 +391,13 @@ header {
 
     .ann__card p {
         font-family: "Montserrat", serif;
-        font-size: 1.125rem;
+        font-size: 1.15rem;
         color: var(--coffee);
         text-align: center;
         text-transform: capitalize;
-        max-width: 95%;
+        max-width: 90%;
         margin: 0 2px 0 2px;
-        padding-top: 8px;
+        padding-top: 10px;
     }
 
     
@@ -404,12 +406,14 @@ header {
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
-        margin: 10px;
+        padding: 100px;
+        
 
     }
 
     .ann__card{
-        margin-right: 10px
+        margin-right: 10px;
+        padding: 20px;
     }
 
 }
@@ -524,11 +528,11 @@ header {
 
 .cont__card:hover{
     transform: scale(1.2);
-    box-shadow: 0 0 20px #ccc;
+    box-shadow: 15px 0 30px gray;
 }
 
 .cont__card:active{
-    background-color: var(--dark-blue);
+    background-color: var(--light-blue);
     box-shadow: none;
     transform: none;
 
@@ -591,6 +595,11 @@ header {
 }
 
 /* footer===== */
+
+footer{
+    background-image: linear-gradient(to top, #8EA7E9, #fff );
+    padding-bottom: 1px;
+}
 
 .footer__top{
     display: flex;
