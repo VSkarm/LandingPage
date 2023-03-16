@@ -137,14 +137,14 @@ header {
     align-items: center;
 }
 .navbar__logo img{
-    width: 90px;
+    width: 150px;
 }
 
 .navbar__logo p{
     font-family: "Roboto", serif;
     font-size:1.125rem;
     text-transform: uppercase;
-    color: var(--blue);
+    color: var(--coffee);
     margin-left: 14px;
 }
 
@@ -296,7 +296,7 @@ header {
     font-size: 50px;
     font-weight: bold;
     font-family:"Montserrat", serif;
-    color: var(--blue);
+    color: #3F497F;
     text-transform: uppercase;
     padding: 5px 0;
 }
@@ -425,6 +425,8 @@ header {
 .history__desc{
     text-align: center;
     padding: 0 15px;
+    margin-right: 0;
+
     
 }
 
@@ -440,11 +442,19 @@ header {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        max-width: 2560px;
     }
     .history__desc{
         text-align: initial;
-        padding: 0 240px 0 0;
-        width: 45%;
+        padding: 0 140px 0 0;
+        width: 50%;
+    }
+
+    .section__tag{
+        padding: 20px auto;
+    }
+    .history__desc .section__title{
+        margin-bottom: 100px;
     }
 
 }
@@ -547,7 +557,7 @@ header {
         flex-wrap: wrap;
 
     }
-    .information__cards:before {
+    /* .information__cards:before {
         content: " ";
         position:absolute;
         bottom: -55%;
@@ -556,7 +566,7 @@ header {
         height: 90%;
         background-image: url("../img/haf.png");
         background-repeat: no-repeat;
-    }
+    } */
 
     
     /* .todo__dec-1{
